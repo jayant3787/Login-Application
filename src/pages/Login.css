@@ -1,0 +1,26 @@
+body{
+    background-color: #ffffff;
+    
+}
+.center{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.card{
+    /* align-items: center;
+    margin: auto;
+    justify-content: center; */
+    
+    
+}
+.dis{
+    display: flex;
+    justify-content: "center";
+    align-items: "center";
+
+}
+

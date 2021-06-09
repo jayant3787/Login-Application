@@ -1,12 +1,39 @@
+import { Form } from 'antd';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Login from './pages/Login';
+import Home from "./pages/Home";
+import Feedback from "./pages/Feedback"
+import Profile from "./pages/Profile"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <Router>
+        <Switch>
+          <Route path="/Home">
+            <Home />
+          </Route>
+          <Route path="/Login">
+            <Login />
+          </Route>
+          <Route path="/Feedback">
+            <Feedback />
+          </Route>
+          <Route path="/Profile">
+            <Profile />
+          </Route>
+        </Switch>
+    </Router>
+    {/* <Login />
+    <Home /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

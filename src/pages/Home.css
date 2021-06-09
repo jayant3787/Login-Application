@@ -1,0 +1,15 @@
+.center{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.avatar-item {
+    margin-right: 100px;
+  }
+.p{
+    margin: 0;
+    display: inline;
+}
