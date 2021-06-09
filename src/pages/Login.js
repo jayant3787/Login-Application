@@ -4,6 +4,18 @@ import { EyeInvisibleOutlined, EyeTwoTone,LoadingOutlined } from '@ant-design/ic
 import './Login.css';
 import logo from './images/a2.png';
 import React from 'react'
+
+export const validatePassword = (password) => {
+  if (!password) return false;
+
+  const regex = /^(?=.*?[A-Z])(?=(.*[a-z]){1,})([A-Za-z\d@$!%*?&])(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,25}$/;
+  if (!regex.test(password)) return false;
+
+  return true;
+};
+export const PASSWORD_MESSAGE =
+'lenth should be at least 8 characters, and have 1 no., 1 special symbol,1 upper and lower case each';
+export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format(value);
       const layout = {
         labelCol: { span: 8 },
         wrapperCol: { span: 16 },
@@ -32,6 +44,7 @@ import React from 'react'
           />
       );
       
+
         return (
           <Form
             {...layout}
@@ -50,7 +63,7 @@ import React from 'react'
           alignItems: "center",
           color:'tomato'
         }} class="site-card-border-less-wrapper">
-      <Card headStyle={{backgroundColor:"#f0f0f0",textAlign: "center"}} title="LOGIN" bordered={true} style={{ width: 450, height:320 }} hoverable={true}>
+      <Card headStyle={{backgroundColor:"#f0f0f0",textAlign: "center"}} title="LOGIN" bordered={true} style={{ width: 450, height:330 }} hoverable={true}>
             <Form.Item
              label="Email"
              name="Email"
@@ -62,7 +75,17 @@ import React from 'react'
             <Form.Item
              label="Password"
               name="password"
-              rules={[{required: true, message: 'Please enter your Password!' }]}>
+              rules={[{required: true, message: 'Please enter your Password!' },
+              () => ({
+                  validator(_, value) {
+                    if (!value || validatePassword(value)) {
+                      return Promise.resolve();
+                    }
+                    return Promise.reject(PASSWORD_MESSAGE);
+                  },
+                }),
+                ]}
+                has feedback>
               <Input.Password />
             </Form.Item>
       
