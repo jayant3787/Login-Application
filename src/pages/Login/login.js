@@ -1,10 +1,11 @@
+import React from 'react';
 import 'antd/dist/antd.css';
 import {  Card,Form, Input, Button, Checkbox,Spin, Space   } from 'antd';
 import { EyeInvisibleOutlined, EyeTwoTone,LoadingOutlined } from '@ant-design/icons';
-import './Login.css';
-import logo from './images/a2.png';
-import React from 'react'
-
+import './login.css';
+import logo from '../images/got3.png';
+import { getKeyThenIncreaseKey } from 'antd/lib/message';
+import { render } from '@testing-library/react';
 export const validatePassword = (password) => {
   if (!password) return false;
 
@@ -14,7 +15,7 @@ export const validatePassword = (password) => {
   return true;
 };
 export const PASSWORD_MESSAGE =
-'lenth should be at least 8 characters, and have 1 no., 1 special symbol,1 upper and lower case each';
+'lenth should be at least 8 characters, and have 1 number, 1 special symbol,1 upper and lower case';
 export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format(value);
       const layout = {
         labelCol: { span: 8 },
@@ -25,36 +26,53 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
       };
       
       const Demo = () =>{
-      
+
         const onFinish = (values: any) => {
           console.log('Success:', values);
           window.location.href='/Home';
         };
       
-        const onFinishFailed = (errorInfo: any) => {
-          console.log('Failed:', errorInfo);
-        };
         const ColoredLine = ({ color }) => (
           <hr
               style={{
                   color: color,
-                  backgroundColor: color,
-                  height: 2
+                  backgroundColor: color
               }}
           />
       );
+      // constructor(props){
+      //   super(props);
+      //   this.state = {
+      //     disabled:true
+      //   }
+      //   this.onChange = this.handleChange.bind(this);
+      // }
       
-
+      
+      // handleChange = (e) =>{
+      //   if(e.target.value.length >=6){
+      //     this.setState({
+      //       disabled:false
+      //     });
+      //   }
+      //   else {
+      //       this.setState({
+      //         disabled:true
+      //       });
+          
+      //   }
+      //   // this.onChange = this.handleChange.bind(this);
+      // }
         return (
           <Form
             {...layout}
             name="basic"
             initialValues={{remember: true }}
             onFinish={onFinish}
-            onFinishFailed={onFinishFailed}
           >
-          <img class="center" src={logo} alt="Logo" />
-          <ColoredLine color="black" /><br/><br/><br/><br/>
+          <img style={{marginLeft:30}} src={logo} alt="Logo" />
+
+          <ColoredLine color="#092b00" /><br/><br/><br/><br/>
 
           <div 
           style={{
@@ -63,12 +81,14 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
           alignItems: "center",
           color:'tomato'
         }} class="site-card-border-less-wrapper">
-      <Card headStyle={{backgroundColor:"#f0f0f0",textAlign: "center"}} title="LOGIN" bordered={true} style={{ width: 450, height:330 }} hoverable={true}>
+      <Card headStyle={{backgroundColor:"#254000",textAlign: "center", color:'#ffffff'}} title="LOGIN" bordered={true} style={{ width: 450, height:300 }} hoverable={true}>
             <Form.Item
              label="Email"
              name="Email"
-             rules={[{ required: true, message: 'Please enter your Email'},{type:'email', message:'Please enter a valid Email'}]}>
-            <Input />
+             rules={[{ required: true, message: 'Please enter your Email'},{type:'email', message:'Please enter a valid Email'}]}
+            //  onChange={this.handleChange}
+             >
+            <Input  />
             </Form.Item>
             
       
@@ -85,16 +105,16 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
                   },
                 }),
                 ]}
-                has feedback>
+                has feedback
+                // onChange={this.handleChange}
+                >
               <Input.Password />
-            </Form.Item>
-      
-            <Form.Item {...tailLayout} name="remember" valuePropName="checked">
-              <Checkbox>Remember me</Checkbox>
-            </Form.Item>
+            </Form.Item><br/>
       
             <Form.Item {...tailLayout}>
-              <Button type="primary" htmlType="submit">
+              <Button
+              // disabled={this.state.disabled}
+               type="primary" htmlType="submit">
                 Submit 
               </Button>
             </Form.Item>
@@ -102,8 +122,7 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
            </div>
           </Form>
         );
-      
-    };
+  };
 
 
 export default Demo;
