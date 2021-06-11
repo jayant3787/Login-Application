@@ -1,9 +1,9 @@
 import 'antd/dist/antd.css';
-import {  Avatar,Input, Space,Menu, Dropdown, Card,Form  } from 'antd';
+import {  Avatar,Input, Space,Menu, Dropdown, Card,  } from 'antd';
 import { DownOutlined,AudioOutlined  } from '@ant-design/icons';
 import './home.css'
 import logo from '../images/got3.png'
-import logo1 from '../images/sword.jpg'
+// import logo1 from '../images/sword.jpg'
 import React from 'react';
 import card from '../card/card';
 function Home(){
@@ -67,6 +67,13 @@ const menu = (
                 
                 </div>
                 <div><h1 class='h1'>ENJOY YOUR SHOPPING</h1></div>
+                <Card 
+    hoverable
+    style={{ width: 240,marginTop:70,marginLeft:30 }}
+    cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+  >
+    <Meta title="Europe Street beat" description="www.instagram.com" />
+  </Card>
                 </form>
                 
 

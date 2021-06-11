@@ -81,7 +81,7 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
           alignItems: "center",
           color:'tomato'
         }} class="site-card-border-less-wrapper">
-      <Card headStyle={{backgroundColor:"#254000",textAlign: "center", color:'#ffffff'}} title="LOGIN" bordered={true} style={{ width: 450, height:300 }} hoverable={true}>
+      <Card headStyle={{backgroundColor:"#254000",textAlign: "center", color:'#ffffff'}} title="LOGIN" bordered={true} style={{ width: 450, height:300,boxShadow:10}} hoverable={true}>
             <Form.Item
              label="Email"
              name="Email"
