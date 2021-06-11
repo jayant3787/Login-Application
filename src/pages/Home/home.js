@@ -70,7 +70,7 @@ const menu = (
                <ColoredLine color="#092b00" />
                 
                 
-                <div><h1 class='h1'>ENJOY YOUR SHOPPING</h1></div>
+                <div><span><h1 class='h1'>ENJOY YOUR SHOPPING</h1></span></div>
                 <div style={{
           display: "flex",
           justifyContent: "center",

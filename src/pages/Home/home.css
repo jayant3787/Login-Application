@@ -16,6 +16,12 @@
 .h1{
     margin-left: 650px;
     color: #092b00;
+    border: 5px darkolivegreen;
+    border-style:groove;
+    border-radius: 5px;
+    width:fit-content;
+    background-color:darkolivegreen;
+    /* border-width: fit-content; */
 }
 /* .card{
     display: grid;
