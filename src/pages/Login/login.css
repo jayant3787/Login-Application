@@ -10,13 +10,13 @@ body{
     margin-top: 50px;
     margin-left: 100px;
 }
-.card{
-    /* align-items: center;
+/* .card{
+     align-items: center;
     margin: auto;
-    justify-content: center; */
+    justify-content: center; 
     
     
-}
+} */
 .dis{
     display: flex;
     justify-content: "center";

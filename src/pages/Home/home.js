@@ -1,11 +1,15 @@
 import 'antd/dist/antd.css';
-import {  Avatar,Input, Space,Menu, Dropdown, Card,  } from 'antd';
+import {  Avatar,Input, Space,Menu, Dropdown, Card,Form  } from 'antd';
 import { DownOutlined,AudioOutlined  } from '@ant-design/icons';
 import './home.css'
 import logo from '../images/got3.png'
-// import logo1 from '../images/sword.jpg'
+import logo1 from '../images/got_sword.jpg'
+import logo2 from '../images/shield2.png'
+import logo3 from '../images/got_shield.png'
+import logo4 from '../images/got_psoter1.jpg'
+import logo5 from '../images/got_dragon.png'
+
 import React from 'react';
-import card from '../card/card';
 function Home(){
   const { Meta } = Card;
 
@@ -52,8 +56,8 @@ const menu = (
     
     return(
       
-      <form>
-        <div>
+      <Form>
+        
                 <img style={{marginLeft:30}}src={logo} alt="logo" />
                 
                 
@@ -65,16 +69,51 @@ const menu = (
                </Dropdown><br/>
                <ColoredLine color="#092b00" />
                 
-                </div>
+                
                 <div><h1 class='h1'>ENJOY YOUR SHOPPING</h1></div>
+                <div style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color:'tomato'
+        }} class="site-card-border-less-wrapper">
                 <Card 
     hoverable
-    style={{ width: 240,marginTop:70,marginLeft:30 }}
-    cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+    style={{ width: 240 }}
+    cover={<img alt="example" src={logo1} />}
   >
-    <Meta title="Europe Street beat" description="www.instagram.com" />
+    <Meta title="Assassin Sword" description="Colour: Steel grey" />
   </Card>
-                </form>
+  <Card 
+    hoverable
+    style={{ width: 240,marginLeft:30 }}
+    cover={<img alt="example" src={logo2} />}
+  >
+    <Meta title="Ancient Brooch Shield" description="Colour: Silver" />
+  </Card>
+  <Card 
+    hoverable
+    style={{ width: 240,marginLeft:30 }}
+    cover={<img alt="example" src={logo3} />}
+  >
+    <Meta title="Vintage Brooch Shield" description="Colour: Gold" />
+  </Card>
+  <Card 
+    hoverable
+    style={{ width: 240,marginLeft:30 }}
+    cover={<img alt="example" src={logo4} />}
+  >
+    <Meta title="House of Stark Poster" description="Colour: Black" />
+  </Card>
+  <Card class="card"
+    hoverable
+    style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
+    cover={<img alt="example" src={logo5} />}
+  >
+    <Meta title="Dragon Poster" description="Colour: Steel Grey" />
+  </Card>
+  </div>
+  </Form>
                 
 
         

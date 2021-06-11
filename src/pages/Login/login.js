@@ -63,6 +63,8 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
       //   }
       //   // this.onChange = this.handleChange.bind(this);
       // }
+      const { Meta } = Card;
+
         return (
           <Form
             {...layout}
