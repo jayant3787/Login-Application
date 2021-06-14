@@ -18,17 +18,17 @@ function Feedback() {
     const menu = (
         <Menu>
         <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="./home">
+            <a  rel="noopener noreferrer" href="./home">
               Home
             </a>
           </Menu.Item>
           <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="./profile">
+            <a  rel="noopener noreferrer" href="./profile">
               Profile
             </a>
           </Menu.Item>
           <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="./login">
+            <a rel="noopener noreferrer" href="./login">
               Logout
             </a>
           </Menu.Item>
@@ -36,8 +36,8 @@ function Feedback() {
       );
     return (
         <div>
-            <img style={{marginLeft:30}} src={logo} alt="logo" />
-            <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" style={{marginLeft: '1300px',color: '#f56a00', backgroundColor: '#fde3cf' }}>
+            <a href="./home"><img style={{marginLeft:30}} src={logo} alt="logo" /></a>
+            <Avatar style={{marginLeft: '1300px',color: '#f56a00', backgroundColor: '#fde3cf' }}><b>J</b>
                 </Avatar>
                 <Dropdown overlay={menu}>
     <a className="ant-dropdown-link" onClick={e => e.preventDefault()}> <DownOutlined />

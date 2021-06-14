@@ -1,4 +1,5 @@
-import React from 'react';
+// import React, {createContext, useState,useEffect} from 'react';
+import React, {useState} from 'react';
 import 'antd/dist/antd.css';
 import {  Card,Form, Input, Button, Checkbox,Spin, Space   } from 'antd';
 import { EyeInvisibleOutlined, EyeTwoTone,LoadingOutlined } from '@ant-design/icons';
@@ -6,6 +7,19 @@ import './login.css';
 import logo from '../images/got3.png';
 import { getKeyThenIncreaseKey } from 'antd/lib/message';
 import { render } from '@testing-library/react';
+import { localeData } from 'moment';
+import { props } from 'bluebird';
+// export const credentials= createContext();
+// const credentialsProvider= (props)=>{
+//   const [loginCredentials, dispatch]=useReducer(login,[],()=>{
+//     const localData = localStorage.getItem('loginCredentials');
+//     return localData ? JSON.parse(localData) : [];
+//   });
+//   useEffect(() => {
+//     localStorage.setItem('loginCredetials', JSON.stringify(loginCredentials))
+//   }, [loginCredentials]);
+// }
+
 export const validatePassword = (password) => {
   if (!password) return false;
 
@@ -24,12 +38,25 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
       const tailLayout = {
         wrapperCol: { offset: 8, span: 16 },
       };
+
+      const useStateWithLocalStorage = localStorageKey => {
+        const [value1, setValue1] = React.useState(
+          localStorage.getItem(localStorageKey) || ''
+        );
+       
+        React.useEffect(() => {
+          localStorage.setItem(localStorageKey, value1);
+        }, [value1]);
+       
+        return [value1, setValue1];
+      };
+      
       
       const Demo = () =>{
 
         const onFinish = (values: any) => {
           console.log('Success:', values);
-          window.location.href='/Home';
+          window.location.href='/home';
         };
       
         const ColoredLine = ({ color }) => (
@@ -63,10 +90,62 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
       //   }
       //   // this.onChange = this.handleChange.bind(this);
       // }
+      // const [setState, setItem, getItem] = useState(0);
       const { Meta } = Card;
+      // userData;
 
-        return (
-          <Form
+      // constructor(props){ 
+      //   super(props);
+      //   this.onChangeEmail = this.onChangeEmail.bind(this);
+      //   this.onChangePassword = this.onChangePassword.bind(this);
+
+      //   this.state = {
+      //     email:"",
+      //     password:""
+      //   }
+      // }
+
+      // onChangeEmail (e) {
+      //   this.setState({email:e.target.value})
+      // }
+
+      // onChangePassword (e) {
+      //   this.setState({passowrd:e.target.value})
+      // }
+
+      // onSubmit (e) {
+      //   e.preventDefault()
+      // }
+
+      // componentDidMount(){
+      //  this.userData = JSON.parse(localStorage.getItem('user'));
+      //   if(localStorage.getItem('user')){
+      //     this.setState({
+      //       email:this.userData.email,
+      //       password:this.userData.passowrd
+      //     })
+      //   }else{
+      //     this.setState({
+      //       email:'',
+      //       password:''
+      //     })
+      //   }
+      // }
+      // componentWillUpdate(nextProps, nextState){
+      //   localStorage.setItem('user', JSON.stringify(nextState));
+      // }
+      const [value, setValue] = React.useState('');
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+  const [value1, setValue1] = useStateWithLocalStorage(
+    'myValueInLocalStorage'
+  );
+  const onChange = event => setValue1(event.target.value);
+
+       return (
+          <Form  
             {...layout}
             name="basic"
             initialValues={{remember: true }}
@@ -89,6 +168,10 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
              name="Email"
              rules={[{ required: true, message: 'Please enter your Email'},{type:'email', message:'Please enter a valid Email'}]}
             //  onChange={this.handleChange}
+            // value={this.state.email}
+            // onChange={this.onChangeEmail}
+            value={value} onChange={handleChange}
+            value1={value1} type="text" onChange={onChange}
              >
             <Input  />
             </Form.Item>
@@ -107,8 +190,14 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
                   },
                 }),
                 ]}
+                value={value} onChange={handleChange}
+                // value1={value1}  onChange={onChange}
                 has feedback
                 // onChange={this.handleChange}
+            //     value={this.state.password}
+            // onChange={this.onChangePassword}
+           
+            
                 >
               <Input.Password />
             </Form.Item><br/>
@@ -116,7 +205,9 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
             <Form.Item {...tailLayout}>
               <Button
               // disabled={this.state.disabled}
-               type="primary" htmlType="submit">
+               type="primary" htmlType="submit"
+               disabled={!value}
+               >
                 Submit 
               </Button>
             </Form.Item>

@@ -10,7 +10,7 @@ import logo4 from '../images/got_psoter1.jpg'
 import logo5 from '../images/got_dragon.png'
 
 import React from 'react';
-function Home(){
+function Home(props){
   const { Meta } = Card;
 
     const ColoredLine = ({ color }) => (
@@ -37,17 +37,17 @@ const onSearch = value => console.log(value);
 const menu = (
     <Menu>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="./profile">
+        <a  rel="noopener noreferrer" href="./profile">
           Profile
         </a>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="./feedback">
+        <a  rel="noopener noreferrer" href="./feedback">
           Feedback
         </a>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="./login">
+        <a  rel="noopener noreferrer" href="./login">
           Logout
         </a>
       </Menu.Item>
@@ -58,15 +58,16 @@ const menu = (
       
       <Form>
         
-                <img style={{marginLeft:30}}src={logo} alt="logo" />
+                 <img style={{marginLeft:30}}src={logo} alt="logo"/>
                 
                 
-                <Avatar  src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" style={{marginLeft: '1300px',color: '#f56a00', backgroundColor: '#fde3cf' }}>
+               {/* <p style={{marginLeft:'1250px'}}>{props.localStorageKey}</p> */}
+               <Avatar style={{marginLeft: '1300px',color: '#f56a00', backgroundColor: '#fde3cf' }}><b>J</b>
                 </Avatar>
                 <Dropdown overlay={menu}>
                <a className="ant-dropdown-link" onClick={e => e.preventDefault()}> <DownOutlined />
                </a>
-               </Dropdown><br/>
+               </Dropdown>
                <ColoredLine color="#092b00" />
                 
                 
@@ -79,7 +80,7 @@ const menu = (
         }} class="site-card-border-less-wrapper">
                 <Card 
     hoverable
-    style={{ width: 240 }}
+    style={{ width: 240, }}
     cover={<img alt="example" src={logo1} />}
   >
     <Meta title="Assassin Sword" description="Colour: Steel grey" />
