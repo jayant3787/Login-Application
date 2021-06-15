@@ -49,6 +49,7 @@ const menu = (
       <Menu.Item>
         <a  rel="noopener noreferrer" href="./login">
           Logout
+          
         </a>
       </Menu.Item>
     </Menu>
@@ -61,7 +62,7 @@ const menu = (
                  <img style={{marginLeft:30}}src={logo} alt="logo"/>
                 
                 
-               {/* <p style={{marginLeft:'1250px'}}>{props.localStorageKey}</p> */}
+               {/* <p style={{marginLeft:'1250px'}}>{this.props.value1}</p> */}
                <Avatar style={{marginLeft: '1300px',color: '#f56a00', backgroundColor: '#fde3cf' }}><b>J</b>
                 </Avatar>
                 <Dropdown overlay={menu}>

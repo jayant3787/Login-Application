@@ -142,7 +142,7 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
   const [value1, setValue1] = useStateWithLocalStorage(
     'myValueInLocalStorage'
   );
-  const onChange = event => setValue1(event.target.value);
+  const onChange1 = event => setValue1(event.target.value);
 
        return (
           <Form  
@@ -171,9 +171,10 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
             // value={this.state.email}
             // onChange={this.onChangeEmail}
             value={value} onChange={handleChange}
-            value1={value1} type="text" onChange={onChange}
+            
+            // value2 = {localStorage.getItem("myValueInlocalStorage")}
              >
-            <Input  />
+            <Input value1={value1} type="text" onChange={onChange1}/>
             </Form.Item>
             
       
@@ -191,7 +192,7 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
                 }),
                 ]}
                 value={value} onChange={handleChange}
-                // value1={value1}  onChange={onChange}
+                // value1={value1}  onChange={onChange1}
                 has feedback
                 // onChange={this.handleChange}
             //     value={this.state.password}
@@ -219,4 +220,5 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
 
 
 export default Demo;
+
 const FormItem = Form.Item;
