@@ -1,13 +1,23 @@
 import 'antd/dist/antd.css';
-import {  Avatar,Input, Space,Menu, Dropdown, Card,Form  } from 'antd';
+import { Button,  Avatar,Input, Space,Menu, Dropdown, Card,Form  } from 'antd';
 import { DownOutlined,AudioOutlined  } from '@ant-design/icons';
 import './home.css'
 import logo from '../images/got3.png'
-import logo1 from '../images/got_sword.jpg'
-import logo2 from '../images/shield2.png'
-import logo3 from '../images/got_shield.png'
-import logo4 from '../images/got_psoter1.jpg'
-import logo5 from '../images/got_dragon.png'
+import logo1 from '../images/vegetable_basket.jpg'
+import logo3 from '../images/screw.jpg'
+import logo5 from '../images/red_stripes.jpg'
+import logo7 from '../images/Car_Poster.jpg'
+import logo8 from '../images/white_badheet.jpg'
+import logo9 from '../images/paint_brush.jpg'
+import logo10 from '../images/jute_thread.jpg'
+import logo11 from '../images/cindrella_hat.jpg'
+import logo12 from '../images/pot.jpg'
+import logo13 from '../images/sweater.jpg'
+
+
+
+
+
 
 import React from 'react';
 function Home(props){
@@ -81,39 +91,117 @@ const menu = (
         }} class="site-card-border-less-wrapper">
                 <Card 
     hoverable
-    style={{ width: 240, }}
+    style={{ width: 240 }}
     cover={<img alt="example" src={logo1} />}
   >
-    <Meta title="Assassin Sword" description="Colour: Steel grey" />
+    <Meta title="Vegetable Basket" description="Colour: Olive" />
   </Card>
-  <Card 
-    hoverable
-    style={{ width: 240,marginLeft:30 }}
-    cover={<img alt="example" src={logo2} />}
-  >
-    <Meta title="Ancient Brooch Shield" description="Colour: Silver" />
-  </Card>
+  
   <Card 
     hoverable
     style={{ width: 240,marginLeft:30 }}
     cover={<img alt="example" src={logo3} />}
   >
-    <Meta title="Vintage Brooch Shield" description="Colour: Gold" />
+    <Meta title="Star Screw" description="Colour: Black" />
   </Card>
-  <Card 
-    hoverable
-    style={{ width: 240,marginLeft:30 }}
-    cover={<img alt="example" src={logo4} />}
-  >
-    <Meta title="House of Stark Poster" description="Colour: Black" />
-  </Card>
+  
   <Card class="card"
     hoverable
     style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
     cover={<img alt="example" src={logo5} />}
   >
-    <Meta title="Dragon Poster" description="Colour: Steel Grey" />
+    <Meta title="Stripes Wallpaper" description="Colour: Red & Black" />
   </Card>
+
+  <Card class="card"
+    hoverable
+    style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
+    cover={<img alt="example" src={logo7} />}
+  >
+    <Meta title="Black Tesla Wallpaper" description="Colour: Brown & Black" />
+  </Card>
+
+  <Card class="card"
+    hoverable
+    style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
+    cover={<img alt="example" src={logo9} />}
+  >
+    <Meta title="25mm Paint brush" description="Colour: White" />
+  </Card>
+  </div>
+  <div >
+  <Button style={{marginLeft:120,marginTop:7}}>Buy now</Button>
+  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  </div>
+
+  <div style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color:'tomato',
+          marginTop: 20 ,
+          marginRight: 27
+          }}>
+  <Card class="card"
+    hoverable
+    style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
+    cover={<img alt="example" src={logo11} />}
+  >
+    <Meta title="Cindrella Hat" description="Colour: White" />
+  </Card>
+
+  <Card class="card"
+    hoverable
+    style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
+    cover={<img alt="example" src={logo12} />}
+  >
+    <Meta title="Flower Pot" description="Colour: White" />
+  </Card>
+
+  <Card class="card"
+    hoverable
+    style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
+    cover={<img alt="example" src={logo8} />}
+  >
+    <Meta title="Queen Size Badsheet" description="Colour: White" />
+  </Card>
+
+  <Card class="card"
+    hoverable
+    style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
+    cover={<img alt="example" src={logo13} />}
+  >
+    <Meta title="Chain Pattern Sweater" description="Colour: Grey" />
+  </Card>
+
+  <Card class="card"
+    hoverable
+    style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
+    cover={<img alt="example" src={logo10} />}
+  >
+    <Meta title="Jute Thread Mat" description="Colour: olive" />
+  </Card>
+  
+  </div>
+  <div >
+  <Button style={{marginLeft:120,marginTop:7}}>Buy now</Button>
+  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
   </div>
   </Form>
                 
