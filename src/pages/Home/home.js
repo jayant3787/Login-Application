@@ -92,24 +92,24 @@ const menu = (
         }} class="site-card-border-less-wrapper">
                 <Card 
     hoverable
-    style={{ width: 240 }}
+    style={{ width: 240, border:2, borderStyle:'groove', backgroundColor:'#fde3cf'}}
     cover={<img alt="example" src={logo1} />}
   >
     <Meta title="Vegetable Basket" description="Colour: Olive" />
     <div>
-  <Button type="primary"style={{marginTop:15}}>Buy now</Button>
-  <Button type="primary"style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button style={{marginTop:15}}>Buy now</Button>
+  <Button style={{marginLeft:1.8}}>Add to cart</Button></div>
   </Card>
   
   <Card 
     hoverable
-    style={{ width: 240,marginLeft:30 }}
+    style={{ width: 240,marginLeft:30,boxShadow:5 }}
     cover={<img alt="example" src={logo3} />}
   >
     <Meta title="Star Screw" description="Colour: Black" />
     <div>
-  <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button type="primary"style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
   
   <Card class="card"
