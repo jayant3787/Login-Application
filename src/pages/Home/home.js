@@ -2,6 +2,7 @@ import 'antd/dist/antd.css';
 import { Button,  Avatar,Input, Space,Menu, Dropdown, Card,Form  } from 'antd';
 import { DownOutlined,AudioOutlined  } from '@ant-design/icons';
 import './home.css'
+// import num from '../Home/home';
 import logo from '../images/got3.png'
 import logo1 from '../images/vegetable_basket.jpg'
 import logo3 from '../images/screw.jpg'
@@ -95,6 +96,9 @@ const menu = (
     cover={<img alt="example" src={logo1} />}
   >
     <Meta title="Vegetable Basket" description="Colour: Olive" />
+    <div>
+  <Button type="primary"style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
   
   <Card 
@@ -103,6 +107,9 @@ const menu = (
     cover={<img alt="example" src={logo3} />}
   >
     <Meta title="Star Screw" description="Colour: Black" />
+    <div>
+  <Button style={{marginTop:15}}>Buy now</Button>
+  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
   
   <Card class="card"
@@ -111,6 +118,9 @@ const menu = (
     cover={<img alt="example" src={logo5} />}
   >
     <Meta title="Stripes Wallpaper" description="Colour: Red & Black" />
+    <div>
+  <Button style={{marginTop:15}}>Buy now</Button>
+  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -119,6 +129,9 @@ const menu = (
     cover={<img alt="example" src={logo7} />}
   >
     <Meta title="Black Tesla Wallpaper" description="Colour: Brown & Black" />
+    <div>
+  <Button style={{marginTop:15}}>Buy now</Button>
+  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -127,20 +140,23 @@ const menu = (
     cover={<img alt="example" src={logo9} />}
   >
     <Meta title="25mm Paint brush" description="Colour: White" />
+    <div>
+  <Button style={{marginTop:15}}>Buy now</Button>
+  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
   </div>
-  <div >
-  <Button style={{marginLeft:120,marginTop:7}}>Buy now</Button>
-  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
-  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
-  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
-  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
-  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
-  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
-  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
-  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
-  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
-  </div>
+  {/* <div >
+  <Button type="primary"style={{marginLeft:120,marginTop:7}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button type="primary"style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button type="primary"style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button type="primary"style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button type="primary"style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  </div> */}
 
   <div style={{
           display: "flex",
@@ -156,6 +172,9 @@ const menu = (
     cover={<img alt="example" src={logo11} />}
   >
     <Meta title="Cindrella Hat" description="Colour: White" />
+    <div>
+  <Button style={{marginTop:15}}>Buy now</Button>
+  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -164,6 +183,9 @@ const menu = (
     cover={<img alt="example" src={logo12} />}
   >
     <Meta title="Flower Pot" description="Colour: White" />
+    <div>
+  <Button style={{marginTop:15}}>Buy now</Button>
+  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -172,6 +194,9 @@ const menu = (
     cover={<img alt="example" src={logo8} />}
   >
     <Meta title="Queen Size Badsheet" description="Colour: White" />
+    <div>
+  <Button style={{marginTop:15}}>Buy now</Button>
+  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -180,6 +205,9 @@ const menu = (
     cover={<img alt="example" src={logo13} />}
   >
     <Meta title="Chain Pattern Sweater" description="Colour: Grey" />
+    <div>
+  <Button style={{marginTop:15}}>Buy now</Button>
+  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -188,21 +216,24 @@ const menu = (
     cover={<img alt="example" src={logo10} />}
   >
     <Meta title="Jute Thread Mat" description="Colour: olive" />
+    <div>
+  <Button style={{marginTop:15}}>Buy now</Button>
+  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
   
   </div>
-  <div >
-  <Button style={{marginLeft:120,marginTop:7}}>Buy now</Button>
-  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
-  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
-  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
-  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
-  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
-  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
-  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
-  <Button style={{marginLeft:65,marginTop:7}}>Buy now</Button>
-  <Button style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
-  </div>
+  {/* <div >
+  <Button type="primary"style={{marginLeft:120,marginTop:7}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button type="primary"style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button type="primary"style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button type="primary"style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  <Button type="primary"style={{marginLeft:65,marginTop:7}}>Buy now</Button>
+  <Button type="primary"style={{marginLeft:18,marginTop:7}}>Add to cart</Button>
+  </div> */}
   </Form>
                 
 

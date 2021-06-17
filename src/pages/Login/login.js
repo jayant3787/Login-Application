@@ -50,12 +50,14 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
        
         return [value1, setValue1];
       };
+      // let num =[1,2];
       
       
       const Demo = () =>{
 
         const onFinish = (values: any) => {
           console.log('Success:', values);
+          
           window.location.href='/home';
         };
       
@@ -170,6 +172,7 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
             //  onChange={this.handleChange}
             // value={this.state.email}
             // onChange={this.onChangeEmail}
+            
             value={value} onChange={handleChange}
             
             // value2 = {localStorage.getItem("myValueInlocalStorage")}
@@ -220,5 +223,6 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
 
 
 export default Demo;
+// module.exports= num;
 
 const FormItem = Form.Item;
