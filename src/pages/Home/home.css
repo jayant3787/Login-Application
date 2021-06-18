@@ -14,12 +14,14 @@
     display: inline;
 }
 .h1{
-    margin-left: 650px;
+    margin-left: 99px;
+    margin-right: 99px;
     color: #092b00;
-    border: 5px darkolivegreen;
+    border: 5px #092b00;
     border-style:groove;
     border-radius: 5px;
-    width:fit-content;
+    text-align: center;
+    /* width:fit-content; */
     background-color:#fde3cf;
 }
 /* .card{
