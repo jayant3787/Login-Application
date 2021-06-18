@@ -106,13 +106,13 @@ const menu = (
         }} class="site-card-border-less-wrapper">
                 <Card 
     hoverable
-    style={{ width: 240, border:2, borderStyle:'groove', backgroundColor:'#fde3cf'}}
+    style={{ width: 240}}
     cover={<img alt="example" src={logo1} />}
   >
     <Meta title="Vegetable Basket" description="Colour: Olive" />
     <div>
-  <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:1.8}}>Add to cart</Button></div>
+  <Button type="primary" style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary" style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
   
   <Card 
@@ -122,8 +122,8 @@ const menu = (
   >
     <Meta title="Star Screw" description="Colour: Black" />
     <div>
-  <Button type="primary"style={{marginTop:15}}>Buy now</Button>
-  <Button type="primary"style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button type="primary" style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary" style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
   
   <Card class="card"
@@ -133,8 +133,8 @@ const menu = (
   >
     <Meta title="Stripes Wallpaper" description="Colour: Red & Black" />
     <div>
-  <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button type="primary" style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary" style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -144,8 +144,8 @@ const menu = (
   >
     <Meta title="Black Tesla Wallpaper" description="Colour: Brown & Black" />
     <div>
-  <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button type="primary" style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary" style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -155,8 +155,8 @@ const menu = (
   >
     <Meta title="25mm Paint brush" description="Colour: White" />
     <div>
-  <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button type="primary" style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary" style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
   </div>
   {/* <div >
@@ -182,24 +182,24 @@ const menu = (
           }}>
   <Card class="card"
     hoverable
-    style={{ width: 240,marginLeft:30 ,boxShadow:"7 10 12 -5 #092b00", border:2, borderStyle:'groove', backgroundColor:'#fde3cf'}}
+    style={{ width: 240,marginLeft:30 }}
     cover={<img alt="example" src={logo11} />}
   >
     <Meta title="Cindrella Hat" description="Colour: White" />
     <div>
-  <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:1.8}}>Add to cart</Button></div>
+  <Button type="primary" style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary" style={{marginLeft:1.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
     hoverable
-    style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
+    style={{ width: 240,marginLeft:30}}
     cover={<img alt="example" src={logo12} />}
   >
     <Meta title="Flower Pot" description="Colour: White" />
     <div>
-  <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button type="primary" style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary" style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -209,8 +209,8 @@ const menu = (
   >
     <Meta title="Queen Size Badsheet" description="Colour: White" />
     <div>
-  <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button type="primary" style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary" style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -220,8 +220,8 @@ const menu = (
   >
     <Meta title="Chain Pattern Sweater" description="Colour: Grey" />
     <div>
-  <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button type="primary" style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary" style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"
@@ -231,8 +231,8 @@ const menu = (
   >
     <Meta title="Jute Thread Mat" description="Colour: olive" />
     <div>
-  <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button type="primary" style={{marginTop:15}}>Buy now</Button>
+  <Button type="primary" style={{marginLeft:3.8}}>Add to cart</Button></div>
   </Card>
   
   </div>

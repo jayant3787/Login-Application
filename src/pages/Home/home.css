@@ -16,13 +16,13 @@
 .h1{
     margin-left: 99px;
     margin-right: 99px;
-    color: #092b00;
+    color: #f0ecec;
     border: 5px #092b00;
     border-style:groove;
     border-radius: 5px;
     text-align: center;
     /* width:fit-content; */
-    background-color:#fde3cf;
+    background-color:#254000;
 }
 /* .card{
     display: grid;
