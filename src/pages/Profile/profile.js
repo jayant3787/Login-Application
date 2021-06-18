@@ -4,6 +4,8 @@ import { DownOutlined  } from '@ant-design/icons';
 import React from 'react';
 import './profile.css'
 import logo from '../images/got3.png'
+import { SettingOutlined, HomeOutlined, LogoutOutlined, SmileOutlined } from '@ant-design/icons';
+
 
 function Profile() {
     const ColoredLine = ({ color }) => (
@@ -18,17 +20,17 @@ function Profile() {
     const menu = (
         <Menu>
         <Menu.Item>
-            <a rel="noopener noreferrer" href="./home">
+            <HomeOutlined /><a rel="noopener noreferrer" href="./home">
               Home
             </a>
           </Menu.Item>
           <Menu.Item>
-            <a  rel="noopener noreferrer" href="./feedback">
+            <SettingOutlined /><a  rel="noopener noreferrer" href="./feedback">
               Feedback
             </a>
           </Menu.Item>
           <Menu.Item>
-            <a rel="noopener noreferrer" href="./login">
+            <LogoutOutlined /><a rel="noopener noreferrer" href="./login">
               Logout
             </a>
           </Menu.Item>

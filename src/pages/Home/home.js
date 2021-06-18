@@ -14,6 +14,8 @@ import logo10 from '../images/jute_thread.jpg'
 import logo11 from '../images/cindrella_hat.jpg'
 import logo12 from '../images/pot.jpg'
 import logo13 from '../images/sweater.jpg'
+import { SettingOutlined, SmileOutlined, LogoutOutlined } from '@ant-design/icons';
+
 
 
 
@@ -21,7 +23,16 @@ import logo13 from '../images/sweater.jpg'
 
 
 import React from 'react';
+
+
 function Home(props){
+  // const IconFont = createFromIconfontCN({
+  //   scriptUrl: [
+  //     '//at.alicdn.com/t/font_1788044_0dwu4guekcwr.js', // icon-javascript, icon-java, icon-shoppingcart (overrided)
+  //     '//at.alicdn.com/t/font_1788592_a5xf2bdic3u.js', // icon-shoppingcart, icon-python
+  //   ],
+  // });
+
   const { Meta } = Card;
 
     const ColoredLine = ({ color }) => (
@@ -48,17 +59,17 @@ const onSearch = value => console.log(value);
 const menu = (
     <Menu>
       <Menu.Item>
-        <a  rel="noopener noreferrer" href="./profile">
+      <SmileOutlined /><a  rel="noopener noreferrer" href="./profile">
           Profile
         </a>
       </Menu.Item>
       <Menu.Item>
-        <a  rel="noopener noreferrer" href="./feedback">
+       <SettingOutlined /> <a  rel="noopener noreferrer" href="./feedback">
           Feedback
         </a>
       </Menu.Item>
       <Menu.Item>
-        <a  rel="noopener noreferrer" href="./login">
+      <LogoutOutlined /><a  rel="noopener noreferrer" href="./login">
           Logout
           
         </a>
@@ -74,6 +85,9 @@ const menu = (
                 
                 
                {/* <p style={{marginLeft:'1250px'}}>{this.props.value1}</p> */}
+{/* <               div className="icons-list">
+               <IconFont style={{marginLeft:1300}}type="icon-shoppingcart" />
+               </div>  */}
                <Avatar style={{marginLeft: '1300px',color: '#f56a00', backgroundColor: '#fde3cf' }}><b>J</b>
                 </Avatar>
                 <Dropdown overlay={menu}>
@@ -168,13 +182,13 @@ const menu = (
           }}>
   <Card class="card"
     hoverable
-    style={{ width: 240,marginLeft:30,boxShadow:"7 10 12 -5 #092b00"}}
+    style={{ width: 240,marginLeft:30 ,boxShadow:"7 10 12 -5 #092b00", border:2, borderStyle:'groove', backgroundColor:'#fde3cf'}}
     cover={<img alt="example" src={logo11} />}
   >
     <Meta title="Cindrella Hat" description="Colour: White" />
     <div>
   <Button style={{marginTop:15}}>Buy now</Button>
-  <Button style={{marginLeft:3.8}}>Add to cart</Button></div>
+  <Button style={{marginLeft:1.8}}>Add to cart</Button></div>
   </Card>
 
   <Card class="card"

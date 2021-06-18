@@ -2,13 +2,14 @@
 import React, {useState} from 'react';
 import 'antd/dist/antd.css';
 import {  Card,Form, Input, Button, Checkbox,Spin, Space   } from 'antd';
-import { EyeInvisibleOutlined, EyeTwoTone,LoadingOutlined } from '@ant-design/icons';
+// import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import './login.css';
 import logo from '../images/got3.png';
 import { getKeyThenIncreaseKey } from 'antd/lib/message';
 import { render } from '@testing-library/react';
 import { localeData } from 'moment';
 import { props } from 'bluebird';
+// import { LoadingOutlined } from '@ant-design/icons';
 // export const credentials= createContext();
 // const credentialsProvider= (props)=>{
 //   const [loginCredentials, dispatch]=useReducer(login,[],()=>{
@@ -50,13 +51,14 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
        
         return [value1, setValue1];
       };
-      // let num =[1,2];
+      
       
       
       const Demo = () =>{
 
         const onFinish = (values: any) => {
           console.log('Success:', values);
+          // <LoadingOutlined />
           
           window.location.href='/home';
         };
@@ -223,6 +225,6 @@ export const formatNumber = (value) => new Intl.NumberFormat('en-US', {}).format
 
 
 export default Demo;
-// module.exports= num;
+
 
 const FormItem = Form.Item;
