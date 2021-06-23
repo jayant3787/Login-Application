@@ -1,0 +1,19 @@
+.cardContainer {
+  display: inline-grid;
+  justify-content: center;
+}
+
+.cardRoot {
+  width: 270px;
+  margin-left: 87px;
+  margin-top: 15px;
+}
+
+.buyBtn {
+  margin-top: 15px;
+  margin-left: 18px;
+}
+
+.cartBtn {
+  margin-left: 10px;
+}
