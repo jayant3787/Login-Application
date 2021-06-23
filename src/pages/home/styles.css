@@ -31,3 +31,22 @@
     box-shadow: #092b00; 
    
 } */
+.card-style{
+    display: "flex";
+          justify-content: "center";
+          align-items: "center";
+          color:'tomato';
+          margin-top: 20px;
+          margin-right: 27px;
+}
+.p1{
+    margin-left: 1272px;
+}
+.div-style{
+    display: "flex";
+       justify-content: "center";
+      align-items: "center";
+         color:'tomato';
+        flex-direction: 'row';
+
+}

@@ -1,40 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import Login from './pages/Login/login';
-import Home from "./pages/Home/home";
-import Feedback from "./pages/Feedback/feedback"
-import Profile from "./pages/Profile/profile"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import "antd/dist/antd.css";
+import reportWebVitals from "./reportWebVitals";
+import Login from "./pages/login/login";
+import Home from "./pages/home";
+import Feedback from "./pages/feedback/feedback";
+import Profile from "./pages/Profile/profile";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-  <Router>
-        <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/feedback">
-            <Feedback />
-          </Route>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-          <Route path="/">
-            <Login />
-          </Route>
-        </Switch>
+    <Router>
+      <Switch>
+        <Route path="/home" component={Home} />
+        <Route path="/feedback" component={Feedback} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/" component={Login} />
+      </Switch>
     </Router>
-    {/* <Login />
-    <Home /> */}
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
