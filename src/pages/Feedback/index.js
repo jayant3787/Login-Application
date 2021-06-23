@@ -10,7 +10,7 @@ function Feedback() {
   if (!isLoggedIn) return <Redirect to="/login" />;
   return (
     <div>
-      <Header />
+      <Header navItems={["home", "profile"]} />
       <div
         style={{
           display: "flex",

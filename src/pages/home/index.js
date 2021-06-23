@@ -16,11 +16,11 @@ const Home = () => {
   if (!isLoggedIn) return <Redirect to="/login" />;
   return (
     <React.Fragment>
-      <Header />
+      <Header navItems={["profile", "feedback"]} />
       <div className={styles.headerContainer}>
         <h1 className={styles.header}>ENJOY YOUR SHOPPING</h1>
         <Button className={styles.clearBtn} onClick={() => handleClick()}>
-          Clear
+          Clear All
         </Button>
       </div>
       <div class="grid">

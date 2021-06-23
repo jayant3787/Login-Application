@@ -10,7 +10,7 @@ function Profile() {
   if (!isLoggedIn) return <Redirect to="/login" />;
   return (
     <div>
-      <Header />
+      <Header navItems={["home", "feedback"]}/>
       <div
         style={{
           display: "flex",
