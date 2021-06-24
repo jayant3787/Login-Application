@@ -26,6 +26,7 @@
     ├── components             # contains all reusable components(eg. header).
     ├── constants              # define app constants here.
     ├── pages                  # contains screen UI.
+    ├── Router                  # contains router to route the pages.
 
 ### Description
 Steps:
