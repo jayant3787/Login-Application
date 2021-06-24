@@ -43,8 +43,7 @@ export default function Header({ isLogin, navItems }) {
             <b>{localStorage.getItem("mail_ID").charAt(0)}</b>
           </Avatar>
           <Dropdown overlay={menuItems}>
-            <a
-              className="ant-dropdown-link"
+            <a className="ant-dropdown-link"
               onClick={(e) => e.preventDefault()}
             >
               {" "}

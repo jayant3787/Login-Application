@@ -1,6 +1,5 @@
 import "antd/dist/antd.css";
 import { Progress, Card } from "antd";
-import "./feedback.css";
 import React from "react";
 import { Redirect } from "react-router-dom";
 import Header from "../../components/Header";
@@ -10,7 +9,7 @@ function Feedback() {
   if (!isLoggedIn) return <Redirect to="/login" />;
   return (
     <div>
-      <Header navItems={["home", "profile"]} />
+      <Header navItems={["home", "profile"]}/>
       <div
         style={{
           display: "flex",

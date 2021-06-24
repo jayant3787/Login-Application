@@ -13,9 +13,9 @@ export const validatePassword = (password) => {
 
   return true;
 };
-export const PASSWORD_MESSAGE =
+ const PASSWORD_MESSAGE =
   "Password length should be at least 8 characters, and have 1 number, 1 special symbol,1 upper and lower case";
-export const formatNumber = (value) =>
+ const formatNumber = (value) =>
   new Intl.NumberFormat("en-US", {}).format(value);
 const layout = {
   labelCol: { span: 8 },

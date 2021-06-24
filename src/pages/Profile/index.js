@@ -1,7 +1,6 @@
 import React from "react";
 import "antd/dist/antd.css";
 import { Card } from "antd";
-import "./profile.css";
 import { Redirect } from "react-router-dom";
 import Header from "../../components/Header";
 
