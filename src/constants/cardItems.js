@@ -2,60 +2,34 @@ import item1 from "../assets/images/vegetable_basket.jpg";
 import item3 from "../assets/images/screw.jpg";
 import item5 from "../assets/images/red_stripes.jpg";
 import item7 from "../assets/images/Car_Poster.jpg";
-import item8 from "../assets/images/paint_brush.jpg";
-import item9 from "../assets/images/cinderella_hat.jpg";
-import item10 from "../assets/images/jute_thread.jpg";
-import item11 from "../assets/images/pot.jpg";
 
 const cardItems = [
   {
     id: 1,
     Image: item1,
-    Title: "Vegetable Basket",
-    Text: "Colour : Olive",
+    Title: "PUN",
+    Text: "twopart   The past, the present and the future walk into a bar.   It was tense ",
+
   },
   {
     id: 2,
     Image: item3,
-    Title: "Star Screw",
-    Text: "Colour : Black",
+    Title: "DARK",
+    Text: "twopart   What's the difference between Jesus and a hooker?    The look on their face when you are",
   },
   {
     id: 3,
     Image: item5,
-    Title: "Stripes Wallpaper",
-    Text: "Colour : Red & Black",
+    Title: "DARK",
+    Text: "twopart   What is the difference between a pizza and a black man?    A pizza can feed a family of five.",
   },
   {
     id: 4,
     Image: item7,
-    Title: "Black Tesla Wallpaper",
-    Text: "Colour : Brown & Black",
+    Title: "PROGRAMMING",
+    Text: "twopart  Why did the Python programmer not respond to the foreign mails he got?",
   },
-  {
-    id: 5,
-    Image: item8,
-    Title: "25mm Paint Brush",
-    Text: "Colour : White",
-  },
-  {
-    id: 6,
-    Image: item9,
-    Title: "Cinderella Hat",
-    Text: "Colour : White",
-  },
-  {
-    id: 7,
-    Image: item10,
-    Title: "Jute Mat",
-    Text: "Colour : Olive",
-  },
-  {
-    id: 8,
-    Image: item11,
-    Title: "Flower Pot",
-    Text: "Colour : White",
-  },
+  
 ];
 
 export default cardItems;

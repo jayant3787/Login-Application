@@ -38,7 +38,7 @@ function Profile() {
             <br />
             <b>Email: jayant3787@gmail.com</b>
             <br />
-            <b>Company: Adcuratio Media Inc</b>
+            <b>Company: ABC Company</b>
           </p>{" "}
         </Card>
       </div>

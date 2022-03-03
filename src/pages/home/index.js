@@ -16,13 +16,7 @@ const Home = () => {
   if (!isLoggedIn) return <Redirect to="/login" />;
   return (
     <React.Fragment>
-      <Header navItems={["profile", "feedback"]} />
-      <div className={styles.headerContainer}>
-        <h1 className={styles.header}>ENJOY YOUR SHOPPING</h1>
-        <Button className={styles.clearBtn} onClick={() => handleClick()}>
-          Clear All
-        </Button>
-      </div>
+      <Header navItems={["profile"]} />
       <div class="grid">
         {listItems.map((item) => (
           <Card item={item} />
